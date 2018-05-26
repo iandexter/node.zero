@@ -1,0 +1,67 @@
+BODY		{	background: #EEFFFA;
+			margin-top: 0px;
+			margin-left: 0px; }
+
+A:link		{	color: #CC0000;	
+			text-decoration: NONE; }
+	
+A:visited	{	color: #0033CC;
+			text-decoration: NONE; }
+	
+A:active	{	color: #FF3300;
+			text-decoration: NONE; }
+	
+A:hover		{	color: #6600CC;
+			font-weight: BOLD;
+			text-decoration: NONE; }
+
+.nameplate	{	font-family: Georgia, Times, 'Times New Roman', serif; 
+			font-size: 200pt; 
+			font-weight: BOLD; 
+			color: #DDEEFA; 
+			position: ABSOLUTE; 
+			top: 0px; 
+			left: 15px; 
+			z-index: 0; }
+
+.author		{	font-family: Georgia, Times, 'Times New Roman', serif;
+			font-size: 60pt;
+			font-weight: BOLD;
+			color: #D0E0FA;
+			position: ABSOLUTE;
+			top: 145px;	
+			left: 100px; 
+			z-index: 0; }
+
+.title		{	font-family: Georgia, Times, 'Times New Roman', serif;
+			font-size: 16pt;
+			color: #AABBFA;
+			font-weight: BOLD; }
+          
+.bodytext	{	font-family: Georgia, Times, 'Times New Roman', serif;
+			font-size: 11pt;
+			line-height: 14pt;
+			color: #000000; }
+
+.poem		{	position: ABSOLUTE;	
+			top: 205px;
+			left: 300px;
+			z-index: 1; }
+
+.navbar		{	font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: 8pt;
+			line-height: 12pt;
+			position: ABSOLUTE;
+			top: 250px;
+			left: 15px;
+			z-index: 2; }
+
+.feedback	{	font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: 8pt; }
+	
+.tab		{	position: RELATIVE;
+			top: 0px;
+			left: 55px; }
+
+.email		{	font-weight: BOLD;
+			color: #0033CC; }
