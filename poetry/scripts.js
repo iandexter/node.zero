@@ -85,27 +85,27 @@ function preloadFront() {
    }
 }
 
-var imgStatus = 0;   
+var imgStatus = 0;
 function flipImg(imageName) {
-   
+
    if (document.images) {
       document[imageName].src = eval(imageName + (imgStatus ? 0 : 1) + ".src");
    }
-   
+
    imgStatus = !imgStatus;
-   
+
    return true;
-} 
+}
 
 function preloadImages() {
    if (document.images) {
       toggle0 = new Image();
       toggle0.src = imgPath + "toggle.gif";
       toggle1 = new Image();
-      toggle1.src = imgPath + "hide.gif"; 
+      toggle1.src = imgPath + "hide.gif";
    }
 }
-   
+
 var menuStatus = 0;
 function showMenu() {
    var theMenu;
@@ -119,15 +119,20 @@ function showMenu() {
    if (document.layers) {
       visible = "show";
       hidden = "hide";
-      theMenu = document.layers["popup"];      
+      theMenu = document.layers["popup"];
    }
    else if (document.all) {
       visible = "visible";
       hidden = "hidden";
       theMenu = document.all("popup").style;
    }
+   else {
+      visible = "visible";
+      hidden = "hidden";
+      theMenu = document.getElementById("popup").style;
+   }
 
    theMenu.visibility = theMenu.visibility==visible ? hidden : visible;
 
    return true;
-} 
+}
